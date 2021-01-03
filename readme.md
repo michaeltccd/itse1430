@@ -14,8 +14,6 @@ Refer to the [Getting Started](https://github.com/michaeltccd/itse1430-docs/blob
 
 The book for this course is available electronically here in the document repository.
 
-The source code referenced in the book is available link:src/readme.md[here](https://github.com/michaeltccd/itse1430-docs/blob/master/book/readme.adoc.
-
 ## Repository Layout
 
 The repository is laid out in a way to make it easier for you to work with during class.
