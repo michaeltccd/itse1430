@@ -2,6 +2,10 @@
   <ApplicationIdentity version="16.0"/>
   <ToolsOptions>
     <ToolsOptionsCategory name="Environment" RegisteredName="Environment">
+      <ToolsOptionsSubCategory name="ProductUpdates" RegisteredName="ProductUpdates" PackageName="VS Setup Composition">
+        <PropertyValue name="OperationMode">InstallWhileDownloading</PropertyValue>
+        <PropertyValue name="IsBackgroundDownloadEnabled">true</PropertyValue>
+      </ToolsOptionsSubCategory>
       <ToolsOptionsSubCategory name="Documents" RegisteredName="Documents" PackageName="Visual Studio Environment Package">
         <PropertyValue name="ShowMiscFilesProject">false</PropertyValue>
         <PropertyValue name="AutoloadExternalChanges">true</PropertyValue>
@@ -11,6 +15,7 @@
         <PropertyValue name="AllowEditingReadOnlyFiles">false</PropertyValue>
       </ToolsOptionsSubCategory>
       <ToolsOptionsSubCategory name="ProjectsAndSolution" RegisteredName="ProjectsAndSolution" PackageName="Visual Studio Environment Package">
+        <PropertyValue name="ProjectsLocation">%vsspv_user_appdata%\source\repos</PropertyValue>
         <PropertyValue name="PromptForRenameSymbol">true</PropertyValue>
         <PropertyValue name="TrackFileSelectionInExplorer">true</PropertyValue>
         <PropertyValue name="ShowOutputWindowBeforeBuild">true</PropertyValue>
@@ -1223,4 +1228,40 @@
     <PropertyValue name="EnableEdgeDevToolsWWAOnLaunch">0</PropertyValue>
     <PropertyValue name="EnableLegacyChromeJavaScriptDebuggerForASPNET">0</PropertyValue>    
   </Category>      
+  <Category name="Environment_NewProjectDialogPreferredLanguage" Category="{77E22C0C-9F4A-4bfb-AD3A-3F3F4711E9ED}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_NewProjectDialogPreferredLanguage" PackageName="Visual Studio Environment Package">
+      <PropertyValue name="HasNewProjectDialogPreferredLanguage">true</PropertyValue>
+      <PropertyValue name="NewProjectDialogPreferredLanguage">VC#</PropertyValue>
+      <PropertyValue name="DefaultToLargeIconView">false</PropertyValue>
+  </Category>
+  <Category name="Environment_OutputWindow" Category="{07C6CD04-100B-4f3e-BA93-DD1363E8D8E3}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_OutputWindow" PackageName="Visual Studio Environment Package">
+    <PropertyValue name="OutputWindowWordWrap">false</PropertyValue>
+  </Category>
+  <Category name="Environment_PreviewFeatures" Category="{FCA50351-5E03-4E31-9CC0-AB59A9C6B829}" Package="{7AC58323-1325-44DB-A4D5-2823A1426A13}" RegisteredName="Environment_PreviewFeatures" PackageName="Feature Flags Package">
+    <PropertyValue name="HasFeatureFlags">True</PropertyValue>
+  </Category>
+  <Category name="Projects_Web Package Management_Package Restore" Category="{03D27F49-12E4-4282-94F3-03A8AEF90B8F}" Package="{cb03d63d-47be-437d-b26b-1ad8aa7ff394}" RegisteredName="Projects_Web Package Management_Package Restore" PackageName="PackageManagementPackage">
+    <PropertyValue name="NpmRestoreOnPackageJsonSave">True</PropertyValue>
+    <PropertyValue name="NpmRestoreOnProjectOpen">True</PropertyValue>
+  </Category>
+  <Category name="WebProjects" Category="{C78AFEEB-A722-4cf3-AD3F-8694126C2145}" Package="{39c9c826-8ef8-4079-8c95-428f5b1c323f}" RegisteredName="WebProjects" PackageName="Visual Web Developer Project System Package">
+    <PropertyValue name="WarnBeforeRunIfErrors">true</PropertyValue>
+    <PropertyValue name="Use64BitIISExpress">false</PropertyValue>
+    <PropertyValue name="DisableLocalApplicationInsights">false</PropertyValue>
+    <PropertyValue name="EnableDebugTargetsObserver">true</PropertyValue>
+    <PropertyValue name="AutoShowDataConnections">true</PropertyValue>
+  </Category>
+  <Category name="WindowsFormsDesigner_General" Category="{de03177c-918d-40af-8c17-c9d63670c175}" Package="{7b5d447b-0b12-41ea-a84e-c822034422d4}" RegisteredName="WindowsFormsDesigner_General" PackageName="Windows Forms Designer Resources Package">
+    <PropertyValue name="AutoToolboxPopulate">True</PropertyValue>
+    <PropertyValue name="CapitalizeEventHandlerMethodNames">False</PropertyValue>
+    <PropertyValue name="EnableInSituEditing">True</PropertyValue>
+    <PropertyValue name="EnableRefactoringOnRename">True</PropertyValue>
+    <PropertyValue name="GridSize">8, 8</PropertyValue>
+    <PropertyValue name="LayoutMode">SnapLines</PropertyValue>
+    <PropertyValue name="LoggingLevel">None</PropertyValue>
+    <PropertyValue name="ObjectBoundSmartTagAutoShow">True</PropertyValue>
+    <PropertyValue name="ShowGrid">True</PropertyValue>
+    <PropertyValue name="ShowInfoBarForHighDpiDesignerMode">True</PropertyValue>
+    <PropertyValue name="SnapToGrid">True</PropertyValue>
+    <PropertyValue name="UseOptimizedCodeGeneration">True</PropertyValue>
+  </Category>
 </UserSettings>
