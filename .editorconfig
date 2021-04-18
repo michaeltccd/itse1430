@@ -105,34 +105,34 @@ csharp_style_var_elsewhere                                                = true
 csharp_prefer_braces                                                      = false : none
 
 # Throw expressions (IDE0016)
-csharp_style_throw_expression                                             = false : suggestion
+csharp_style_throw_expression                                             = true : suggestion
 
 # Inline variables (IDE0018)
 csharp_style_inlined_variable_declaration                                 = true : suggestion
 
 # Pattern matching vs "as" (IDE0019)
-csharp_style_pattern_matching_over_as_with_null_check                     = false : suggestion
+csharp_style_pattern_matching_over_as_with_null_check                     = true : suggestion
 
 # Pattern matching vs "is" (IDE0020)
 csharp_style_pattern_matching_over_is_with_cast_check                     = true : suggestion
 
 # Expression bodied constructors (IDE0021)
-csharp_style_expression_bodied_constructors                               = false : suggestion
+csharp_style_expression_bodied_constructors                               = true : suggestion
 
 # Expression bodied methods (IDE0022)
-csharp_style_expression_bodied_methods                                    = false : suggestion
+csharp_style_expression_bodied_methods                                    = true : suggestion
 
 # Expression bodied operators (IDE0023 | IDE0024)
-csharp_style_expression_bodied_operators                                  = false : suggestion
+csharp_style_expression_bodied_operators                                  = true : suggestion
 
 # Expression bodied properties (IDE0025)
-csharp_style_expression_bodied_properties                                 = false : suggestion
+csharp_style_expression_bodied_properties                                 = true : suggestion
 
 # Expression bodied indexers (IDE0026)
-csharp_style_expression_bodied_indexers                                   = false : suggestion
+csharp_style_expression_bodied_indexers                                   = true : suggestion
 
 # Expression bodied accessors (IDE0027)
-csharp_style_expression_bodied_accessors                                  = false : suggestion
+csharp_style_expression_bodied_accessors                                  = true : suggestion
 
 # Simplify default expressions (IDE0034)
 csharp_prefer_simple_default_expression                                   = true : suggestion
