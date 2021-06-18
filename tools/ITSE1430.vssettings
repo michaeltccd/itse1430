@@ -2,10 +2,6 @@
   <ApplicationIdentity version="16.0"/>
   <ToolsOptions>
     <ToolsOptionsCategory name="Environment" RegisteredName="Environment">
-      <ToolsOptionsSubCategory name="ProductUpdates" RegisteredName="ProductUpdates" PackageName="VS Setup Composition">
-        <PropertyValue name="OperationMode">InstallWhileDownloading</PropertyValue>
-        <PropertyValue name="IsBackgroundDownloadEnabled">true</PropertyValue>
-      </ToolsOptionsSubCategory>
       <ToolsOptionsSubCategory name="Documents" RegisteredName="Documents" PackageName="Visual Studio Environment Package">
         <PropertyValue name="ShowMiscFilesProject">false</PropertyValue>
         <PropertyValue name="AutoloadExternalChanges">true</PropertyValue>
@@ -15,7 +11,6 @@
         <PropertyValue name="AllowEditingReadOnlyFiles">false</PropertyValue>
       </ToolsOptionsSubCategory>
       <ToolsOptionsSubCategory name="ProjectsAndSolution" RegisteredName="ProjectsAndSolution" PackageName="Visual Studio Environment Package">
-        <PropertyValue name="ProjectsLocation">%vsspv_user_appdata%\source\repos</PropertyValue>
         <PropertyValue name="PromptForRenameSymbol">true</PropertyValue>
         <PropertyValue name="TrackFileSelectionInExplorer">true</PropertyValue>
         <PropertyValue name="ShowOutputWindowBeforeBuild">true</PropertyValue>
@@ -104,19 +99,20 @@
           <MainSite FloatingHeight="1096" FloatingWidth="1936" FloatingWindowState="Maximized">
             <AutoHideRoot IsVisible="True" DockedHeight="*" DockedWidth="*" DockRestriction="AlwaysFloating">
               <AutoHideChannel Orientation="Vertical" IsVisible="True">
+                <AutoHideGroup IsVisible="True">
+                  <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}" IsVisible="True" DockedHeight="614.4" DockedWidth="256" FloatingHeight="614.4" FloatingWidth="256"/>
+                  <wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="00b73ab4-7a2a-4ddf-90c9-e78a163ab06a" Name="ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}" DockedHeight="614.4" DockedWidth="256" FloatingTop="50" FloatingLeft="50" FloatingHeight="350" FloatingWidth="150"/>
+                </AutoHideGroup>
                 <AutoHideGroup>
                   <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}" DockedHeight="768" DockedWidth="204.8" FloatingHeight="614.4" FloatingWidth="256"/>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}" DockedHeight="768" DockedWidth="204.8" FloatingHeight="614.4" FloatingWidth="256"/>
-                </AutoHideGroup>
-                <AutoHideGroup IsVisible="True">
-                  <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}" IsVisible="True" DockedHeight="614.4" DockedWidth="256" FloatingHeight="614.4" FloatingWidth="256"/>
                 </AutoHideGroup>
               </AutoHideChannel>
               <AutoHideChannel Dock="Right" Orientation="Vertical" IsVisible="True">
                 <AutoHideGroup IsVisible="True">
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}" DockedHeight="384" DockedWidth="348.16" FloatingTop="76.8" FloatingLeft="819.2" FloatingHeight="537.6" FloatingWidth="348.16"/>
-                  <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsVisible="True" DockedHeight="384" DockedWidth="348.16" AutoHideWidth="376" FloatingHeight="614.4" FloatingWidth="348.16"/>
-                  <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}" DockedHeight="384" DockedWidth="348.16" AutoHideWidth="427" FloatingHeight="614.4" FloatingWidth="348.16"/>
+                  <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsSelected="True" IsVisible="True" DockedHeight="384" DockedWidth="348.16" AutoHideWidth="376" FloatingHeight="614.4" FloatingWidth="348.16"/>
+                  <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}" IsVisible="True" DockedHeight="384" DockedWidth="348.16" AutoHideWidth="427" FloatingHeight="614.4" FloatingWidth="348.16"/>
                   <wm:ToolWindowView Name="ST:0:0:{3addf8e2-81cc-41a0-9785-dbd2d86064bd}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{0db31cc8-2322-4f59-a610-1fdc8423df77}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
@@ -128,7 +124,6 @@
                   <wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{57dc5d59-11c2-4955-a7b4-d7699d677e93}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{dd1ddd20-d59b-11da-a94d-0800200c9a66}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
-                  <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}" IsVisible="True" DockedWidth="348.16" AutoHideWidth="363" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
                 </AutoHideGroup>
                 <AutoHideGroup>
                   <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}" DockedHeight="537.6" DockedWidth="307.2" AutoHideWidth="307.2" AutoHideHeight="537.6" FloatingHeight="537.6" FloatingWidth="307.2"/>
@@ -159,7 +154,7 @@
                       <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{38ed9834-0c97-445b-bd1d-f78f3e08afac}" DockedHeight="614.4" DockedWidth="256" FloatingHeight="614.4" FloatingWidth="276.48"/>
                       <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{402dc223-d700-4029-866f-acee803f3f0c}" DockedHeight="614.4" DockedWidth="256" FloatingHeight="614.4" FloatingWidth="276.48"/>
                       <wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="1b4aafc9-0e34-43d6-82c9-7771c173630d" Name="ST:0:0:{f52ab1d2-f7f8-4cef-b359-92ca6c171072}" DockedHeight="614.4" DockedWidth="256" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
-                      <wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="00b73ab4-7a2a-4ddf-90c9-e78a163ab06a" Name="ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}" DockedHeight="614.4" DockedWidth="256" FloatingTop="50" FloatingLeft="50" FloatingHeight="350" FloatingWidth="150"/>
+                      <ViewBookmark Name="ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}" DockedHeight="614.4" DockedWidth="256"/>
                     </TabGroup>
                     <TabGroup DockedHeight="768" DockedWidth="256">
                       <ViewBookmark Name="ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}" DockedHeight="768" DockedWidth="256"/>
@@ -169,7 +164,7 @@
                   <DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
                     <DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
                       <wm:ToolWindowView OnTopWhenLastInContext="False" ForceCreate="ForceCreate" Name="ST:0:0:{a2eaf38f-a0ad-4503-91f8-5f004a69a040}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
-                      <wm:WMDocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
+                      <DocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
                         <wm:WMDocumentGroup>
                           <wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{387cb18d-6153-4156-9257-9ac3f9207bbe}" FloatingHeight="614.4" FloatingWidth="819.2"/>
                           <wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{46c87f81-5a06-43a8-9e25-85d33bac49f8}" FloatingHeight="614.4" FloatingWidth="819.2"/>
@@ -194,6 +189,7 @@
                           <ViewBookmark Name="ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}" ViewBookmarkType="DocumentWell"/>
                           <ViewBookmark Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" ViewBookmarkType="DocumentWell"/>
                           <ViewBookmark Name="ST:0:0:{37aba9be-445a-11d3-9949-00c04f68fd0a}" ViewBookmarkType="DocumentWell"/>
+                          <ViewBookmark Name="D:0:0:{9802DD08-95F3-4CA2-B5E8-CD8D7D9C7324}|TestApp\TestApp.csproj|c:\temp\testapp\testapp\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
                           <wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="1ad387fc-b1e8-4023-91fe-f22260b661db" Name="ST:0:0:{2ffc3976-88be-4e8a-8913-68245bb123f9}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
                         </wm:WMDocumentGroup>
                         <wm:WMDocumentGroup>
@@ -210,7 +206,7 @@
                         <wm:WMDocumentGroup>
                           <ViewBookmark Name="ST:0:0:{e62ce6a0-b439-11d0-a79d-00a0c9110051}" ViewBookmarkType="DocumentWell"/>
                         </wm:WMDocumentGroup>
-                      </wm:WMDocumentGroupContainer>
+                      </DocumentGroupContainer>
                       <wm:ToolWindowView OnTopWhenLastInContext="False" ForceCreate="ForceCreate" Name="ST:0:0:{31fc2115-5126-4a87-b2f7-77eaab65048b}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
                       <ViewBookmark Name="ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}" DockedHeight="537.6" DockedWidth="307.2"/>
                     </DockGroup>
@@ -280,7 +276,6 @@
                       <ViewBookmark Name="ST:0:0:{dd1ddd20-d59b-11da-a94d-0800200c9a66}" DockedWidth="348.16"/>
                       <ViewBookmark Name="ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}" DockedWidth="348.16"/>
                       <ViewBookmark Name="ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}" DockedWidth="348.16"/>
-                      <ViewBookmark Name="ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}" DockedWidth="348.16"/>
                     </TabGroup>
                     <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}" IsSelected="True" DockedHeight="384" DockedWidth="348.16" FloatingHeight="614.4" FloatingWidth="276.48"/>
                   </DockGroup>
@@ -447,7 +442,7 @@
                       <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:4:0:{350f9856-a72b-11d2-8ad0-00c04f79e479}" DockedHeight="199.68" DockedWidth="737.28" FloatingHeight="199.68" FloatingWidth="737.28"/>
                     </TabGroup>
                     <DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
-                      <wm:WMDocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
+                      <DocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
                         <wm:WMDocumentGroup>
                           <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="DontForceCreate" Name="ST:0:0:{387cb18d-6153-4156-9257-9ac3f9207bbe}" FloatingHeight="614.4" FloatingWidth="819.2"/>
                           <wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{46c87f81-5a06-43a8-9e25-85d33bac49f8}" FloatingHeight="614.4" FloatingWidth="819.2"/>
@@ -462,7 +457,7 @@
                           <wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{65d61de1-c41c-4504-8c3d-c97027b25ca8}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
                           <wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{1820bae5-c385-4492-9de5-e35c9cf17b18}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
                         </wm:WMDocumentGroup>
-                      </wm:WMDocumentGroupContainer>
+                      </DocumentGroupContainer>
                       <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}" IsSelected="True" DockedHeight="537.6" DockedWidth="307.2" AutoHideWidth="307.2" AutoHideHeight="537.6" FloatingHeight="537.6" FloatingWidth="307.2"/>
                     </DockGroup>
                     <DockGroup DockedHeight="504.68" DockedWidth="512">
@@ -639,7 +634,7 @@
                     </TabGroup>
                   </DockGroup>
                   <DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
-                    <wm:WMDocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
+                    <DocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
                       <wm:WMDocumentGroup>
                         <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="DontForceCreate" Name="ST:0:0:{387cb18d-6153-4156-9257-9ac3f9207bbe}" FloatingHeight="614.4" FloatingWidth="819.2"/>
                         <wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{46c87f81-5a06-43a8-9e25-85d33bac49f8}" FloatingHeight="614.4" FloatingWidth="819.2"/>
@@ -677,7 +672,7 @@
                       <wm:WMDocumentGroup>
                         <ViewBookmark Name="ST:0:0:{e62ce6a0-b439-11d0-a79d-00a0c9110051}" ViewBookmarkType="DocumentWell"/>
                       </wm:WMDocumentGroup>
-                    </wm:WMDocumentGroupContainer>
+                    </DocumentGroupContainer>
                     <DockGroup DockedHeight="199.68" DockedWidth="747.52">
                       <TabGroup DockedHeight="199.68" DockedWidth="747.52">
                         <wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" DockedHeight="199.68" DockedWidth="747.52" FloatingHeight="199.68" FloatingWidth="747.52"/>
@@ -1077,9 +1072,9 @@
           <add Cmd="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000403" CmdPri="00100001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
           <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000000b4" CmdPri="00200001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
           <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000000b3" CmdPri="00400001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
-          <add Cmd="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1}:00000156" CmdPri="00800001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
-          <add Cmd="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1}:00000158" CmdPri="01000001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
-          <add Cmd="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1}:00000157" CmdPri="02000001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
+          <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000000f8" CmdPri="01800001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
+          <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000000f9" CmdPri="02200001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
+          <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000000fa" CmdPri="02c00001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
           <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:00000178" CmdPri="04000001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
           <add Cmd="{C9DD4A59-47FB-11D2-83E7-00C04F9902C1}:00000122" CmdPri="08000001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
           <add Cmd="{5EFC7975-14BC-11CF-9B2B-00AA00573819}:00000100" CmdPri="10000001" Group="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000204" GroupPri="40000001" Menu="{CEB3AA46-02A5-4523-995A-067922DE1E54}:00000603"/>
@@ -1228,40 +1223,4 @@
     <PropertyValue name="EnableEdgeDevToolsWWAOnLaunch">0</PropertyValue>
     <PropertyValue name="EnableLegacyChromeJavaScriptDebuggerForASPNET">0</PropertyValue>    
   </Category>      
-  <Category name="Environment_NewProjectDialogPreferredLanguage" Category="{77E22C0C-9F4A-4bfb-AD3A-3F3F4711E9ED}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_NewProjectDialogPreferredLanguage" PackageName="Visual Studio Environment Package">
-      <PropertyValue name="HasNewProjectDialogPreferredLanguage">true</PropertyValue>
-      <PropertyValue name="NewProjectDialogPreferredLanguage">VC#</PropertyValue>
-      <PropertyValue name="DefaultToLargeIconView">false</PropertyValue>
-  </Category>
-  <Category name="Environment_OutputWindow" Category="{07C6CD04-100B-4f3e-BA93-DD1363E8D8E3}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_OutputWindow" PackageName="Visual Studio Environment Package">
-    <PropertyValue name="OutputWindowWordWrap">false</PropertyValue>
-  </Category>
-  <Category name="Environment_PreviewFeatures" Category="{FCA50351-5E03-4E31-9CC0-AB59A9C6B829}" Package="{7AC58323-1325-44DB-A4D5-2823A1426A13}" RegisteredName="Environment_PreviewFeatures" PackageName="Feature Flags Package">
-    <PropertyValue name="HasFeatureFlags">True</PropertyValue>
-  </Category>
-  <Category name="Projects_Web Package Management_Package Restore" Category="{03D27F49-12E4-4282-94F3-03A8AEF90B8F}" Package="{cb03d63d-47be-437d-b26b-1ad8aa7ff394}" RegisteredName="Projects_Web Package Management_Package Restore" PackageName="PackageManagementPackage">
-    <PropertyValue name="NpmRestoreOnPackageJsonSave">True</PropertyValue>
-    <PropertyValue name="NpmRestoreOnProjectOpen">True</PropertyValue>
-  </Category>
-  <Category name="WebProjects" Category="{C78AFEEB-A722-4cf3-AD3F-8694126C2145}" Package="{39c9c826-8ef8-4079-8c95-428f5b1c323f}" RegisteredName="WebProjects" PackageName="Visual Web Developer Project System Package">
-    <PropertyValue name="WarnBeforeRunIfErrors">true</PropertyValue>
-    <PropertyValue name="Use64BitIISExpress">false</PropertyValue>
-    <PropertyValue name="DisableLocalApplicationInsights">false</PropertyValue>
-    <PropertyValue name="EnableDebugTargetsObserver">true</PropertyValue>
-    <PropertyValue name="AutoShowDataConnections">true</PropertyValue>
-  </Category>
-  <Category name="WindowsFormsDesigner_General" Category="{de03177c-918d-40af-8c17-c9d63670c175}" Package="{7b5d447b-0b12-41ea-a84e-c822034422d4}" RegisteredName="WindowsFormsDesigner_General" PackageName="Windows Forms Designer Resources Package">
-    <PropertyValue name="AutoToolboxPopulate">True</PropertyValue>
-    <PropertyValue name="CapitalizeEventHandlerMethodNames">False</PropertyValue>
-    <PropertyValue name="EnableInSituEditing">True</PropertyValue>
-    <PropertyValue name="EnableRefactoringOnRename">True</PropertyValue>
-    <PropertyValue name="GridSize">8, 8</PropertyValue>
-    <PropertyValue name="LayoutMode">SnapLines</PropertyValue>
-    <PropertyValue name="LoggingLevel">None</PropertyValue>
-    <PropertyValue name="ObjectBoundSmartTagAutoShow">True</PropertyValue>
-    <PropertyValue name="ShowGrid">True</PropertyValue>
-    <PropertyValue name="ShowInfoBarForHighDpiDesignerMode">True</PropertyValue>
-    <PropertyValue name="SnapToGrid">True</PropertyValue>
-    <PropertyValue name="UseOptimizedCodeGeneration">True</PropertyValue>
-  </Category>
 </UserSettings>
