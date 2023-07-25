@@ -1,11 +1,8 @@
 # Installing Visual Studio
 
-To simplify installing Visual Studio the provided `.vsconfig` has the workloads and components needed by the course. To use this file do the following.
-
 1. Go to the download [link](https://visualstudio.microsoft.com/downloads/) for Visual studio.
 1. Download the installer for `Visual Studio Community` and run it.
-1. In the installer select the option to use an exported configuration.
-1. Select the provided `.vsconfig` file.
+1. Select the appropriate workspaces as specified in the Setup documentation.
 1. Set the destination where Visual Studio should be installed.
 1. Click `Install` to install Visual Studio
 
