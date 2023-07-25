@@ -4,11 +4,11 @@ This repository is where your classwork and lab assignments will go.
 
 ## Set Up
 
-Refer to the [Setup](https://github.com/michaeltccd/itse1430-docs/blob/master/setup) section in the documentation repository for important information on how to properly set up your computer for this course.
+Refer to the [Setup](https://github.com/michaeltccd/itse1430-docs/blob/main/setup) section in the documentation repository for important information on how to properly set up your computer for this course.
 
 ## Getting Started
 
-Refer to the [Getting Started](https://github.com/michaeltccd/itse1430-docs/blob/master/gettingstarted) guide in the document repository for help on using the tools in this class.
+Refer to the [Getting Started](https://github.com/michaeltccd/itse1430-docs/blob/main/gettingstarted) guide in the document repository for help on using the tools in this class.
 
 ## Book
 
