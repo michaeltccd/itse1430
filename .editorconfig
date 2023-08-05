@@ -179,7 +179,7 @@ csharp_style_prefer_switch_expression                                     = fals
 #### Formatting - does not use the suggestion, warning, etc format...
 
 # New lines
-csharp_new_line_before_open_brace                                         = control_blocks, events, local_functions, methods, properties, types
+csharp_new_line_before_open_brace                                         = control_blocks, events, local_functions, methods, object_collection, properties, types
 csharp_new_line_before_else                                               = false
 csharp_new_line_before_catch                                              = false
 csharp_new_line_before_finally                                            = false
